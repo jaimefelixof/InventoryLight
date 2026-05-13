@@ -35,6 +35,7 @@ with st.sidebar:
         "📄 Licenças":  "licencas",
         "⚠️ Alertas":   "alertas",
         "📥 Exportar":  "exportar",
+        "🤖 Assistente IA": "assistente",
     }
 
     for label, rota in menu_principal.items():
@@ -94,3 +95,7 @@ elif rota == "usuarios":
 elif rota == "setores":
     from setores import tela_setores
     tela_setores()
+
+elif rota == "assistente":
+    from assistente import tela_assistente
+    tela_assistente()
